@@ -29,5 +29,5 @@ Este projeto foi desenvolvido com foco em performance, responsividade e design m
 - Seção “Sobre” com foco em branding pessoal
 - Seção de serviços com CTA para contato
 
-📌 Status do projeto
+📌 Status do projeto  
 🚧 Em constante evolução — ajustes visuais, SEO e novos recursos podem ser implementados futuramente conforme demanda da cliente.
