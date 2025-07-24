@@ -1,0 +1,390 @@
+/* GLOBAIS E CORES */
+:root {
+    --primary-color: #bd988c;
+    --secondary-color: #a17e72;
+    --card-bg-color: rgba(245, 241, 237, 0.92);
+    --plain-bg-color: #FDF8F5;
+    --title-color: #98705e;
+    --text-color: #4C3F42;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--plain-bg-color);
+}
+
+/* SEÇÃO DO TOPO (HERO) */
+.hero-section {
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-position: center;
+
+    min-height: 85vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.hero-section .card {
+    max-width: 390px;
+    background-color: var(--card-bg-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content {
+    background-color: var(--plain-bg-color);
+    padding: 3rem 1rem;
+}
+
+.page-container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.main-content .card {
+    background-color: rgba(245, 241, 237, 0.92);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.main-content .card:last-child {
+    margin-bottom: 0;
+}
+
+/* CONTEÚDO DENTRO DOS CARDS */
+.logo {
+    max-width: 150px;
+    margin-bottom: 0.75rem;
+}
+
+.slogan-block {
+    margin-bottom: 1rem;
+}
+
+.slogan-text {
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.info-link {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+/* Títulos principais dos cards */
+.card h5 {
+    font-size: 1rem;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+/* BOTÕES */
+.nav-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.quick-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.nav-button-main {
+    background-color: var(--primary-color);
+    color: #FDF8F5;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 220px;
+}
+
+.nav-button-main:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* REDES SOCIAIS */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    border: 1px solid var(--primary-color);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* ACORDEÃO DE PROCEDIMENTOS */
+.subtitle {
+    font-size: 0.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.5rem;
+    font-size: 0.7rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--title-color);
+}
+
+.accordion-header .icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+
+.accordion-content p {
+    padding-bottom: 1.5rem;
+}
+
+.accordion-item.active .accordion-header {
+    color: var(--primary-color);
+}
+
+.accordion-item.active .accordion-header .icon {
+    transform: rotate(45deg);
+}
+
+/* LOCALIZAÇÃO E CONTATO */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.map-button,
+.contact-button {
+    margin-top: 1rem;
+}
+
+#localizacao p {
+    font-size: 0.8rem;
+}
+
+.contact-button .whatsapp-button-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FDF8F5;
+}
+
+.map-button .map-button-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FDF8F5;
+}
+
+.site-credit {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.procedures-card {
+    background-color: rgba(245, 241, 237, 0.3) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+footer.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    background: none;
+    z-index: 0;
+}
+
+
+footer.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/footer.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    filter: brightness(0.8);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+
+footer.card>* {
+    position: relative;
+    z-index: 1;
+}
+
+.procedure-swiper {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.procedure-swiper .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #bd988c !important;
+    width: 20px !important;
+    height: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 50% !important;
+    z-index: 10;
+    opacity: 1 !important;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    padding: 2px;
+}
+
+/* Posição lateral */
+.swiper-button-prev {
+    left: 6px !important;
+}
+
+.swiper-button-next {
+    right: 6px !important;
+}
+
+/* Ícones internos (as flechinhas) */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 12px !important;
+    color: #bd988c !important;
+    font-weight: bold;
+}
+
+
+/* Bolinhas de paginação */
+.swiper-pagination-bullet {
+    background-color: #bd988c !important;
+    width: 8px !important;
+    height: 8px !important;
+    opacity: 0.6 !important;
+    margin: 0 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background-color: #a4796f !important;
+}
