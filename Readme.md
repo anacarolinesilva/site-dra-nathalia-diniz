@@ -1,7 +1,7 @@
 🌐 Acesse o site online
 👉 https://dranathaliadiniz.vercel.app
 
-# Site Dra. Nathália Diniz
+# Site - Dra. Nathália Diniz
 
 Website institucional desenvolvido para a Dra. Nathália Diniz, cirurgiã-dentista com atuação focada em harmonização orofacial. O projeto foi pensado para transmitir confiança, acolhimento e sofisticação, com foco em naturalidade e atendimento humanizado.
 
