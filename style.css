@@ -30,7 +30,7 @@ body {
 .hero-section {
     background-image: url('images/background.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center top 30%;
 
     min-height: 85vh;
     display: flex;
