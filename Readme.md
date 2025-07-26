@@ -22,7 +22,7 @@ Este projeto foi desenvolvido com foco em performance, responsividade e design m
 
 ## Funcionalidades
 
-- Layout 100% responsivo (mobile, tablet e desktop)
+- Layout responsivo (mobile, tablet e desktop)
 - Botão de contato via WhatsApp direto no footer
 - Integração com Google Maps (localização da clínica)
 - Links para redes sociais
